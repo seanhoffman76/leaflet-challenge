@@ -1,0 +1,41 @@
+{"type":"FeatureCollection",
+    "metadata":{
+        "generated":1586716887000,
+        "url":"https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson",
+        "title":"USGS All Earthquakes, Past Month",
+        "status":200,"api":"1.8.1","count":15333
+        },
+    "features":[
+        {"type":"Feature",
+            "properties":{
+                "mag":1.3,
+                "place":"23km NNE of Willow, Alaska",
+                "time":1586716659123,
+                "updated":1586716859232,
+                "tz":-540,
+                "url":"https://earthquake.usgs.gov/earthquakes/eventpage/ak0204qnak8u",
+                "detail":"https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ak0204qnak8u.geojson",
+                "felt":null,
+                "cdi":null,
+                "mmi":null,
+                "alert":null,
+                "status":"automatic",
+                "tsunami":0,
+                "sig":26,
+                "net":"ak",
+                "code":"0204qnak8u",
+                "ids":",ak0204qnak8u,",
+                "sources":",ak,",
+                "types":",geoserve,origin,",
+                "nst":null,
+                "dmin":null,
+                "rms":0.4,
+                "gap":null,
+                "magType":"ml",
+                "type":"earthquake",
+                "title":"M 1.3 - 23km NNE of Willow, Alaska"
+                },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[-149.9144,61.9517,41]},
+                "id":"ak0204qnak8u"}

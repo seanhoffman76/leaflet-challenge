@@ -11,16 +11,73 @@
 
   <!-- Our CSS -->
   <link rel="stylesheet" type="text/css" href="static/css/style.css">
-</head>
-<body>
 
-  <!-- The div that holds our map -->
-  <div id="map"></div>
+  <!-- Import the bootstrap stylesheet -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="index.html">EARTHQUAKE: Visualizing Earthquakes on Maps</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav ml-auto">
+      <ul class="nav nav-pills">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="index.html" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="latvtemp.html">vs. Max Temperature</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="latvhumd.html">vs. Humidity</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="latvcloud.html">vs. Cloudiness</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="latvwind.html">vs. Wind Speed</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="compare.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dataset.html">Data</a>
+          </li>
+        </ul>
+    </ul>
+  </div> -->
+</nav>
+
+<style>
+body {
+  background-image: url('static/images/shutterstock_1048820051.jpg');
+}
+</style>
+
+<body>
+  <br>
+  <div class="row">
+    <div class="col-xl-12">
+      <div class="container fill">
+        <!-- The div that holds our map -->
+        <div id="map"></div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+
 
   <!-- Leaflet JavaScript -->
   <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
   <!-- D3 JavaScript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script>
+  <!-- API key -->
+  <script type="text/javascript" src="static/js/config.js"></script>
   <!-- Our JavaScript -->
   <script type="text/javascript" src="static/js/logic.js"></script>
 </body>
